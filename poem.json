@@ -1,0 +1,46 @@
+[
+    {
+        "emojiId": "\ud83d\ude00",
+        "image": {
+            "thumbnails": [
+                {
+                    "url": "https://www.youtube.com/s/gaming/emoji/7ff574f2/emoji_u1f600.png"
+                }
+            ]
+        },
+        "searchTerms": [
+            "family",
+            "memories"
+        ],
+        "shortcuts": [
+            ":memories:",
+            ":food:",
+            "handshake",
+            "games",
+            "singing"
+        ]
+    },
+    {
+        "emojiId": "\ud83d\ude03",
+        "image": {
+            "thumbnails": [
+                {
+                    "url": "https://www.youtube.com/s/gaming/emoji/7ff574f2/emoji_u1f603.png"
+                }
+            ]
+        },
+        "searchTerms": [
+            "grinning",
+            "laughing",
+            "and",
+            "with",
+            "friendly",
+            "smiles"
+        ],
+        "shortcuts": [
+            ":grinning_faces:",
+            ":cheers:"
+        ]
+    }
+]
+
