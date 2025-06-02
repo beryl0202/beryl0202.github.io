@@ -12,11 +12,20 @@
             margin: 20px;
             font-size: 1.5em;
         }
+        
+        ul#remove {
+            list-style-type: none;
+            padding: 0;
+        }
 
 	details {
 		cursor: pointer;
+
 	}
 
+    h6 {
+        margin-bottom: 3px
+    }
 	details ul, details .transcript { 
 		cursor: auto;
 	}
@@ -59,22 +68,49 @@
         <div class="transcript">
             <details>
                 <summary>Transcript</summary>
-                <ul>
+                <ul id="remove">
                     <li>Joseph Erb: “I'm Joseph ᎧᎾᏘ.”</li>
+                    <br> 
                     <li>Joseph Erb: “I'm a citizen of Cherokee Nation.”</li>
+                    <br> 
                     <li>Joseph Erb: “When I started to submit this idea, I realized that the brilliance of indigeneity is really in community-”</li>
+                    <br> 
                     <li>Joseph Erb: “and the passing down of information from one generation to the next</li>
+                    <br> 
                     <li>Joseph Erb: "like if I think about visitors coming in... to this- this space and seeing the copper wall...”</li> 
+                    <br> 
                     <li>Joseph Erb: “I really want them to rethink the complexity of how advanced the science and knowledge and artistry of indigenous people are”</li>
+                    <br> 
                     <li>Joseph Erb: "Native people were scientists here, they were the first artist- and think about the beauty of relationships...that we have"</li>
+                    <br> 
                     <li>Joseph Erb: "That piece has a granddaughter offering the first corn to the grandmother"</li>
+                    <br> 
                     <li>Joseph Erb: "And it has a grandpa telling us a star story to a grandson"</li>
+                    <br> 
                     <li>Joseph Erb: "I really want them to understand that we are a community of knowledge... and a community of value and-"</li>
+                    <br> 
                     <li>Joseph Erb: "When they look at that piece I really hope they see the joy, the kindness, the beauty of these cultures-"</li>
+                    <br> 
                     <li>Joseph Erb: "That <b>we</b> celebrate"</li>
+                    <br> 
                     <li>Joseph Erb: "You can get a lot of outside success but to get it from other indigenous people - in a place that's for indigenous peoples "</li>
+                    <br> 
                     <li>Joseph Erb: "And their communication to the world about what we are"</li>
+                    <br> 
                     <li>Joseph Erb: "Is about the most humbling thing... that I could ever have been selected to do."</li>
                 </ul>
     </section>
+
+    <h6>Feedback Section</h6>
+    <form action="/action_page.php">
+    <input type="checkbox" id="issue1" name="issue1" value="tra_issue">
+    <label for="issue1"> I have issues with the transcript</label><br>
+    <input type="checkbox" id="issue2" name="issue2" value="aud_issue">
+    <label for="issue2"> I have issues with the audio.</label><br>
+    <input type="checkbox" id="issue3" name="issue3" value="vid_issue">
+    <label for="issue3"> I have issues with the video and/or video content.</label><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
    
