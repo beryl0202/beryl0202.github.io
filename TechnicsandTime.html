@@ -18,32 +18,39 @@
             padding: 0;
         }
 
-	details {
-		cursor: pointer;
+        details {
+            cursor: pointer;
+        }
+        video {
+            display: block;
+            width: 90%;
+        }
+        h6 {
+            margin-bottom: 3px
+        }
+        details ul, details .transcript { 
+            cursor: auto;
+        }
+        .column {
+        float: left;
+        }
 
-	}
+        .left {
+        width: 60%;
+        }
 
-    h6 {
-        margin-bottom: 3px
-    }
-	details ul, details .transcript { 
-		cursor: auto;
-	}
+        .right {
+        width: 40%;
+        }
 
-	.toc { font-size: 14pt; }
-
+        .toc { font-size: 14pt; }
         .transcript {
             font-size: 12.5pt;
-            max-height: 300px;
+            max-height: 900px;
             overflow-y: scroll;
             max-width: 700px;
             border: 1px dotted rgb(0, 0, 0);
             padding: 4px;
-        }
-
-        video {
-            display: block;
-            width: 50%;
         }
 
         aside {
@@ -59,13 +66,47 @@
 
 <body>
 	<h1>Technics and Time</h1>
-    <section id="time_text">
-    <a href="https://www.youtube.com/watch?v=XxEphuRGcH4"> Joseph Erb Interview</a>
-        <video controls>
-            <source src="Joseph Erb.mp4" type="video/mp4">
-            <track label="English" kind="captions" srclang="en" src="time_and_text.vtt" default>
-        </video>
-        <h3>Interview with Joseph Erb on the artwork ‘Indigenous Brilliance’</h3>
+    <div class="column left">
+        <section id="time_text">
+            <a href="https://www.youtube.com/watch?v=XxEphuRGcH4"> Joseph Erb Interview</a>
+            <br>
+            <video controls>
+                <source src="Joseph Erb.mp4" type="video/mp4">
+                <track label="English" kind="captions" srclang="en" src="time_and_text.vtt" default>
+            </video>
+            <h3>Interview with Joseph Erb on the artwork ‘Indigenous Brilliance’</h3>
+        </section>
+
+        <h4>Feedback Section</h4>
+        <form action="https://beryl0202.github.io/TechnicsandTime.html">
+            <input type="checkbox" id="issue1" name="issue1" value="tra_issue">
+            <label for="issue1"> I have issues with the transcript</label><br>
+            <input type="checkbox" id="issue2" name="issue2" value="aud_issue">
+            <label for="issue2"> I have issues with the audio.</label><br>
+            <input type="checkbox" id="issue3" name="issue3" value="vid_issue">
+            <label for="issue3"> I have issues with the video and/or video content.</label>
+            <br>
+            <br>
+    
+            <label>Please select your age:</label>
+            <br>
+            <input type="radio" id="age1" name="age" value="30">
+            <label for="age1"> 10 or under </label><br>
+            <input type="radio" id="age2" name="age" value="60">
+            <label for="age2">11 ~ 20</label><br>  
+            <input type="radio" id="age3" name="age" value="100">
+            <label for="age3">21+</label><br><br>
+        
+            <label for="text">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="column right">
         <div class="transcript">
             <details>
                 <summary>Transcript</summary>
@@ -100,18 +141,9 @@
                     <br> 
                     <li>Joseph Erb: "Is about the most humbling thing... that I could ever have been selected to do."</li>
                 </ul>
-    </section>
-
-    <h6>Feedback Section</h6>
-    <form action="/action_page.php">
-    <input type="checkbox" id="issue1" name="issue1" value="tra_issue">
-    <label for="issue1"> I have issues with the transcript</label><br>
-    <input type="checkbox" id="issue2" name="issue2" value="aud_issue">
-    <label for="issue2"> I have issues with the audio.</label><br>
-    <input type="checkbox" id="issue3" name="issue3" value="vid_issue">
-    <label for="issue3"> I have issues with the video and/or video content.</label><br><br>
-    <input type="submit" value="Submit">
-</form>
+            </details>
+        </div>
+    </div>
 
 </body>
    
